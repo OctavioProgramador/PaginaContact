@@ -1,0 +1,25 @@
+<%- contentFor('privado') %>
+<h1> Soy la página de about </h1>
+
+<section class="hero">
+  <div class="hero-content">
+  <h2> All about US </h2>
+  <p> We are in programming Web Class </p>
+  <a href="/contact" class="btn brl-lg btn primary">
+    Escribenos
+  </a>
+  </div>
+</section>
+
+<%- contentFor('body') %>
+<div class="jumbotron text-center" >
+    <h1>Great Team</h1>
+    <div class="row">
+        <% for (item of usuarios) { %>
+            <div class="col-sm-3">
+                <h2><%=contenidascontenidascontenidas item.name %></h2>
+                <img src="<%= item.avatar %>" class="img-fluid">
+                <h3><%= item.email %></h3>
+            </div>
+       <% } %>
+    </div>
